@@ -8,22 +8,25 @@ body {
   color: #fff;
   font-size: 21px;
 }
+
 .wrapper-container {
   background-color: #23424a;
-  padding: 5em 0;
 }
 
 .container {
   max-width: 900px;
-  padding: 0 5em;
+  padding: 5em 5em;
 }
-h1 {
+
+.container h1 {
   font-size: 48px;
 }
-p {
+
+.container p {
   padding: 1em 0 2em;
   line-height: 1.4;
 }
+
 button {
   padding: 0.75em 1.5em;
   border-radius: 2em; /* Un borde radius mayor que la altura del elemento, lo redondea */
@@ -40,5 +43,42 @@ button {
     color: #38cfd9;
     background-color: #072a2d;
     transform: scale(1.1);
+  }
+}
+
+.wrapper-white {
+  background-color: #fff;
+  color: #23424a;
+
+  & h2 {
+    color: #87629a;
+    font-size: 36px;
+  }
+}
+.wrapper-green {
+  background-color: #136c72;
+
+  & h2 {
+    font-size: 36px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding: 4em 5em;
+  gap: 1em;
+}
+
+.flex-son {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+
+  & p {
+    line-height: 1.4;
   }
 }
